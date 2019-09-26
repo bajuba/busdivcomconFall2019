@@ -84,7 +84,7 @@ class Schools(db.Model):
     contact_email = db.Column(db.String(255), nullable = False, default = "")
     contest_id = db.Column(db.Integer, db.ForeignKey("contests.id"), nullable = False, default = "")
     teachers = db.relationship("Teachers", backref = "teacher", lazy = "dynamic")
-    students = db.relationship("Students", backref = "student", lazy = "dynamic")
+    students = db.relationship("Students", backref = "students", lazy = "dynamic")
 
     def __init__(self, school_name, address, city, zip_code, school_phone, username, password, contact_name, contact_email, contest_id):
         self.school_name = school_name
@@ -142,6 +142,6 @@ class Admins(db.Model):
     username = db.Column(db.String(255), nullable = False, default = "")
     password = db.Column(db.String(255), nullable = False)
 
-    def __init__(self):
-        self.username = "admin"
-        self.password = "bcc2016"
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password

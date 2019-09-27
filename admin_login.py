@@ -1,6 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.security import check_password_hash
-from database import Admins, app
+from database import app, Admins
+import admin_dashboard
+import admin_contests
+import admin_events
+import admin_pictures
+import admin_schools
+import admin_students
+import admin_teachers
 
 ## https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp
 ## use this to find bootstrap classes
@@ -20,16 +27,16 @@ def verify():
 
     if(current_user):
         if(check_password_hash(current_user.password, password)):
-            return render_template("admin_dashboard.html")
+            return redirect(url_for("admin_dashboard"))
         else:
             error_message = "Your username and/or password combination could not be found within our database."
-            return redirect(url_for("index"))
+            return redirect(url_for("login"))
     else:
         error_message = "Your username and/or password combination could not be found within our database."
-        return redirect(url_for("index"))
+        return redirect(url_for("login"))
 
 @app.route("/")
-def index():
+def login():
     return render_template("admin_login.html", username = username, error_message = error_message)
 
 app.run()

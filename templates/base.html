@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <a href = "{{ url_for('admin_dashboard') }}">Home</a>
+            <a href = "{{ url_for('admin_contests') }}">Contests</a>
+            <a href = "{{ url_for('admin_events') }}">Events</a>
+            <a href = "{{ url_for('admin_schools') }}">Schools</a>
+            <a href = "{{ url_for('admin_teachers') }}">Teachers</a>
+            <a href = "{{ url_for('admin_students') }}">Students</a>
+            <a href = "{{ url_for('admin_pictures') }}">Pictures</a>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

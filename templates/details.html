@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text] {
+        width: 100%;
+        border: 2px solid blue;
+        border-radius: 5px;
+        padding: 12px 1px;
+    }
+
+    input[type=text]:focus {
+        background-color: aqua
+    }
+
+    input[type=submit] {
+        background-color:white;
+        color: black;
+        border: 2px solid darkblue;
+        border-radius: 8px;
+        float: right;
+        padding: 12px;
+        transition-duration: 0.4s;
+    }
+
+    input[type=submit]:hover {
+        background-color: darkblue;
+        color: white;
+    }
+
+    label {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }   
+</style>
+<body>
+    <div>
+        <form action=" " method="post" id="form2">
+            <fieldset>
+                <legend>Contest Details</legend>
+
+                <label>Name:</label><input type="text" name="name" placeholder="Name" required>
+            
+                <label>Contest Date:</label><input type="text" name="date1" placeholder="Contest date" required>
+
+                <label>Application Date:</label><input type="text" name="date2" placeholder="Application date" required>
+
+                <label>Application Closed:</label><input type="text" name="closed" placeholder="Application closed" required>
+
+                <label>Start Time:</label><input type="text" name="time1" placeholder="Start time" required>
+
+                <label>End Time:</label><input type="text" name="time2" placeholder="End time" required>
+
+                <label>Location:</label><input type="text" name="location" placeholder="Location" required>
+
+                <label>Location Address:</label><input type="text" name="address" placeholder="Location address" required>
+
+                <label>Contest URL:</label><input type="text" name="url" placeholder="Contest url" required>
+
+                <label>Maximum Students (Per School):</label><input type="text" name="max" placeholder="Maximum students" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="Update Details">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<!--navbar-->
+		<div class="container">
+			<div class="masthead">
+				<img src="assets/images/ui_llc.png" class="logo">
+				<nav>
+					<ul class="nav nav-justified">
+						
+							<li class=''><a href="./">Home</a></li>
+							<li><a class="modal-btn" data-toggle="modal" data-target="#schedule">Schedule</a></li>
+							<li class=''><a href="/info">Information</a></li>
+							<li class='active'><a href="/photos">Photos</a></li>
+							
+								<li class=''><a href="/awards">Awards</a></li>
+							
+							<li><a class="modal-btn" data-toggle="modal" data-target="#contacts">Contact</a></li>
+							
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+<!--archived photos section-->
+<div class="container pull-down">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h2 class="panel-title">Archived Photos </h2>
+			
+		</div>
+		<div class="panel-body">
+			
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="listYears" data-toggle="dropdown" aria-expanded="true">Select contest year <span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="listYears">
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2018"><h4>2018</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2015"><h4>2015</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2013"><h4>2013</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2012"><h4>2012</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2011"><h4>2011</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2010"><h4>2010</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2009"><h4>2009</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2008"><h4>2008</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2007"><h4>2007</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2006"><h4>2006</h4></a></li>
+							
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="?p=pto&a=y2005"><h4>2005</h4></a></li>
+							
+						</ul>
+					</div>
+				
+		</div>
+	</div>
+</div>
+
+{% endblock %}

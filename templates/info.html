@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<!--navbar-->
+		<div class="container">
+			<div class="masthead">
+				<img src="assets/images/ui_llc.png" class="logo">
+				<nav>
+					<ul class="nav nav-justified">
+						
+							<li class=''><a href="./">Home</a></li>
+							<li><a class="modal-btn" data-toggle="modal" data-target="#schedule">Schedule</a></li>
+							<li class='active'><a href="/info">Information</a></li>
+							<li class=''><a href="/photos">Photos</a></li>
+							
+								<li class=''><a href="/awards">Awards</a></li>
+							
+							<li><a class="modal-btn" data-toggle="modal" data-target="#contacts">Contact</a></li>
+							
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container pull-down">
+
+	<!--important dates section-->
+	<div class="panel panel-primary">
+		<div class="panel-heading"><h3 class="panel-title">Important Dates</h3></div>
+		<div class="panel-body">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h3>Business &amp; Computer Contest</h3>
+					<p>Begins Friday, April 26, 2019 for one day.</p>
+				</li>
+				<li class="list-group-item">
+					<h3>School registration</h3>
+					<p>Begins Monday, February 11, 2019 and ends Friday, March 15, 2019.</p>
+				</li>
+				<li class="list-group-item">
+					<h3>Student registration</h3>
+					<p>Begins Tuesday, March 19, 2019 and ends Saturday, April 13, 2019.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--registration section-->
+	<div class="panel panel-success">
+		<div class="panel-heading"><h3 class="panel-title">Registration - 3 easy steps</h3></div>
+		<div class="panel-body">
+			<ul class="list-group">
+				<li class="list-group-item"><span class="badge pull-left pull-left-tab">Step 1</span>Register your school prior to Friday, March 15, 2019.</li>
+				<li class="list-group-item"><span class="badge pull-left pull-left-tab">Step 2</span>Register your five(5) individual students for their contests starting Tuesday, March 19, 2019. <strong>Student Registration will close on Saturday, April 13, 2019</strong>.</li>
+				<li class="list-group-item"><span class="badge pull-left pull-left-tab">Step 3</span>Have your students at Lake Land College by the scheduled date and time of the contest.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--contest schedule section-->
+	<div class="panel panel-danger">
+		
+		<div class="panel-heading"><h3 class="panel-title">Contest Schedule</h3></div>
+		<div class="panel-body">
+			<ul class="list-group">
+				
+					<li class="list-group-item">
+						<h3>09:00am to 09:30am</h3>
+						<div class="well">
+							<p><strong>Registration and Team Pictures</strong><br />Please get here as close to 9:00 AM as possible.</p>
+							<p>Location: Front lobby of the <strong>Student Center / Administration Building</strong></p>
+						</div>
+					</li>
+				
+					<li class="list-group-item">
+						<h3>09:30am to 09:45am</h3>
+						<div class="well">
+							<p><strong>Opening Remarks</strong><br />...</p>
+							<p>Location: Theatre in the Student Center / Administration Building</p>
+						</div>
+					</li>
+				
+					<li class="list-group-item">
+						<h3>09:45am to 11:00am</h3>
+						<div class="well">
+							<p><strong>Individual Test</strong><br />...</p>
+							<p>Location: Webb Hall</p>
+						</div>
+					</li>
+				
+					<li class="list-group-item">
+						<h3>11:00am to 12:30pm</h3>
+						<div class="well">
+							<p><strong>School Team Event</strong><br />...</p>
+							<p>Location: Campus</p>
+						</div>
+					</li>
+				
+					<li class="list-group-item">
+						<h3>12:30pm to 01:00pm</h3>
+						<div class="well">
+							<p><strong>Lunch</strong><br />Free pizza and soft drink lunch</p>
+							<p>Location: Field House</p>
+						</div>
+					</li>
+				
+					<li class="list-group-item">
+						<h3>01:00pm to 01:30pm</h3>
+						<div class="well">
+							<p><strong>Closing Awards Ceremony</strong><br />...</p>
+							<p>Location: Field House</p>
+						</div>
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<!--what is MOS section-->
+	<div class="panel panel-primary">
+		<div class="panel-heading"><h4>What is MOS?</h4></div>
+		<div class="panel-body">
+			<p>Microsoft Office Specialist (MOS) certification is the leading IT certification in the world. More than 1 million MOS exams are taken every year in over 140 countries.  Demonstrate you have the knowledge, skills, and abilities to productively use Microsoft Office. MOS enables you to tap the full features and functionality of the Microsoft Office system, resulting in heightened levels of individual performance, confidence, and differentiation.</p>
+		</div>
+	</div>
+
+	<!--contest rules section-->
+	<div class="panel panel-warning">
+		<div class="panel-heading"><h3 class="panel-title">Contest Rules</h3></div>
+		<div class="panel-body">
+			<div class="well">
+				<h3>Award winners in each of the contest areas will be announced:</h3>
+				<ul>
+					<li>1st, 2nd, and 3rd place in the MOS Word 2013 contest</li>
+					<li>1st, 2nd, and 3rd place in the MOS PowerPoint 2013 contest</li>
+					<li>etc.</li>
+				</ul>
+				<h4>In the event of a tie, the winner will be chosen based on the time taken to complete the exam (shortest time wins.)</h4>
+				<h3>Winning schools in the team event will be announced and determined based on points earned and time to completion:</h3>
+				<ul>
+					<li>Grand champion</li>
+					<li>First runner up</li>
+					<li>Second runner up</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

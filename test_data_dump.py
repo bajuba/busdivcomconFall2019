@@ -10,9 +10,6 @@ teachers_list = []
 students_list = []
 pictures_list = []
 
-##FIX NEEDED: SOME OF THE FIELDS IN THE DATABASE ARE IN DIFFRENT LOCATIONS THEN IN THE ORIGINAL SQL##
-##BECAUSE OF THIS AS AN EXAMPLE IN THE SCHOOLS TABLE I AM TRYING TO INSERT THE CONTEST_ID INTO WHAT IS SUPPOSED TO BE THE USERNAME##
-
 ##add several Contests objects to a list of Contests##
 contest_list.append(Contests("diam vel arcu.","2020-08-17 20:49:45","2019-08-08 23:25:28","2019-12-17 04:35:27","2019-07-02 16:56:46","2019-06-25 07:11:50",13,15,6,"Hashim Giles","Phasellus@elementumpurus.org","(779) 274-9705","euismod enim.","Arden Salas","semper rutrum.","Pellentesque.ultricies.dignissim@sagittisaugueeu.org"))
 contest_list.append(Contests("Aenean massa. Integer","2019-08-20 00:19:39","2019-07-25 14:57:56","2019-07-05 13:37:35","2020-04-03 19:30:45","2019-07-05 10:14:08",12,15,5,"Yolanda Benton","nulla@sagittisDuisgravida.net","(818) 377-9564","dolor sit","Sybil Sherman","parturient montes,","nec@idmagnaet.co.uk"))

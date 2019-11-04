@@ -9,6 +9,8 @@ app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
 
+app.secret_key = "business_division"
+
 #visit here for examples: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
 #example: posts = db.relationship('Post', backref='author', lazy='dynamic')
 

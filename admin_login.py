@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 from werkzeug.security import check_password_hash
 from database import app, Admins
 import admin_dashboard
@@ -27,6 +27,7 @@ def verify():
 
     if(current_user):
         if(check_password_hash(current_user.password, password)):
+            session["admin"] = True
             return redirect(url_for("admin_dashboard"))
         else:
             error_message = "Your username and/or password combination could not be found within our database."

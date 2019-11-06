@@ -31,13 +31,29 @@ def verify():
             return redirect(url_for("admin_dashboard"))
         else:
             error_message = "Your username and/or password combination could not be found within our database."
-            return redirect(url_for("login"))
+            return redirect(url_for("admin_login"))
     else:
         error_message = "Your username and/or password combination could not be found within our database."
-        return redirect(url_for("login"))
+        return redirect(url_for("admin_login"))
+
+@app.route("/admin_logout")
+def admin_logout():
+    global username
+    global error_message
+
+    username = ""
+    error_message = ""
+    session["admin"] = False
+
+    return redirect(url_for("admin_login"))
 
 @app.route("/")
-def login():
+def admin_login():
+    global username
+    global error_message
+
+    session["admin"] = False
+    
     return render_template("admin_login.html", username = username, error_message = error_message)
 
 app.run()

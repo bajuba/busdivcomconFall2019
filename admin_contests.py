@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from database import app, Contests, Admins
 
-@app.route("/contests")
+@app.route("/admin_contests")
 def admin_contests():
     if(session["admin"] == True):
         return render_template("admin_contests.html")
     else:
-        return redirect(url_for("login"))
+        return redirect(url_for("admin_login"))

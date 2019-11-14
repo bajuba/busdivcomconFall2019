@@ -47,7 +47,7 @@ def admin_logout():
 
     return redirect(url_for("admin_login"))
 
-@app.route("/")
+@app.route("/admin_login")
 def admin_login():
     global username
     global error_message
@@ -56,4 +56,3 @@ def admin_login():
     
     return render_template("admin_login.html", username = username, error_message = error_message)
 
-app.run()

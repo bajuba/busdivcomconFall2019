@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect, render_template
-app = Flask('app')
+from database import *
+import admin_login
 
 @app.route('/')
 def index():
@@ -17,4 +18,4 @@ def photos():
 def awards():
   return render_template('awards.html')
 
-app.run(host='0.0.0.0', port=8080)
+app.run()

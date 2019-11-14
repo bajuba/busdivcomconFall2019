@@ -6,45 +6,39 @@
     <form action=" " method="post">
         <fieldset>
             <legend>Contest Details</legend>
-                <label>Name:</label><input type="text" name="contest_name" placeholder="{{ contest_query.name }}" required>
+                <label>Name:</label><input type="text" name="contest_name" value="{{ contest_query.name }}" required>
         
-                <label>Contest Date:</label><input type="text" name="contest_date" placeholder="{{ contest_query.contest_date }}" required>
+                <label>Contest Date:</label><input type="text" name="contest_date" value="{{ contest_query.contest_date }}" required>
 
-                <label>Application Date:</label><input type="text" name="app_start_date" placeholder="{{ contest_query.app_start_date }}" required>
+                <label>Application Date:</label><input type="text" name="app_start_date" value="{{ contest_query.app_start_date }}" required>
 
-                <label>Application Closed:</label><input type="text" name="app_closed_date" placeholder="{{ contest_query.app_close_date }}" required>
+                <label>Application Closed:</label><input type="text" name="app_closed_date" value="{{ contest_query.app_close_date }}" required>
 
-                <label>Start Time:</label><input type="text" name="start_time" placeholder="{{  }}" required>
+                <label>Start Time:</label><input type="text" name="start_time" value="" required>
 
-                <label>End Time:</label><input type="text" name="end_time" placeholder="{{  }}" required>
+                <label>End Time:</label><input type="text" name="end_time" value="" required>
 
-                <label>Location:</label><input type="text" name="location" placeholder="{{  }}" required> 
-
-                <label>Location Address:</label><input type="text" name="address" placeholder="{{  }}" required>
-
-                <label>Contest URL:</label><input type="text" name="url" placeholder="{{  }}" required>
-
-                <label>Maximum Students (Per School):</label><input type="text" name="max_students" placeholder="{{ contest_query.max_students }}" required>
+                <label>Maximum Students (Per School):</label><input type="text" name="max_students" value="{{ contest_query.max_students }}" required>
         </fieldset>
         <br>
         <fieldset>
             <legend>Contest Coordinator</legend>
-                <label>Coordinator Name:</label><input type="text" name="coord_name" placeholder="{{ contest_query.coord_name }}" required>
+                <label>Coordinator Name:</label><input type="text" name="coord_name" value="{{ contest_query.coord_name }}" required>
             
-                <label>Coordinator Email Address:</label><input type="text" name="coord_email" placeholder="{{ contest_query.coord_email }}" required>
+                <label>Coordinator Email Address:</label><input type="text" name="coord_email" value="{{ contest_query.coord_email }}" required>
 
-                <label>Coordinator Phone Number:</label><input type="text" name="coord_phone" placeholder="{{ contest_query.coord_phone }}" required>
+                <label>Coordinator Phone Number:</label><input type="text" name="coord_phone" value="{{ contest_query.coord_phone }}" required>
 
-                <label>Coordinator Title:</label><input type="text" name="coord_title" placeholder="{{ contest_query.coord_title }}" required>
+                <label>Coordinator Title:</label><input type="text" name="coord_title" value="{{ contest_query.coord_title }}" required>
         </fieldset>
         <br>
         <fieldset>
             <legend>Contest Site Developer</legend>
-                <label>Site Developer Name:</label><input type="text" name="dev_name" placeholder="{{ contest_query.dev_name }}" required>
+                <label>Site Developer Name:</label><input type="text" name="dev_name" value="{{ contest_query.dev_name }}" required>
 
-                <label>Site Developer Title:</label><input type="text" name="dev_title" placeholder="{{ contest_query.dev_title }}" required>
+                <label>Site Developer Title:</label><input type="text" name="dev_title" value="{{ contest_query.dev_title }}" required>
 
-                <label>Site Developer Email:</label><input type="text" name="dev_email" placeholder="{{ contest_query.dev_email }}" required>
+                <label>Site Developer Email:</label><input type="text" name="dev_email" value="{{ contest_query.dev_email }}" required>
         </fieldset>
         <br>
         <input type="submit" value="Update Details">

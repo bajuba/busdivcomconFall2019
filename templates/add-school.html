@@ -3,19 +3,15 @@
 <style>
     input[type=text] {
         width: 100%;
-        border: 2px solid blue;
+        border: 2px solid grey;
         border-radius: 5px;
         padding: 12px 1px;
-    }
-
-    input[type=text]:focus {
-        background-color: aqua
     }
 
     input[type=submit] {
         background-color:white;
         color: black;
-        border: 2px solid darkblue;
+        border: 2px solid darkgrey;
         border-radius: 8px;
         float: right;
         padding: 12px;
@@ -23,13 +19,13 @@
     }
 
     input[type=submit]:hover {
-        background-color: darkblue;
+        background-color: darkgrey;
         color: white;
     }
 
     select {
         width: 100.5%;
-        border: 2px solid blue;
+        border: 2px solid grey;
         border-radius: 5px;
         padding: 12px 1px;
     }
@@ -91,25 +87,35 @@
 
             </fieldset>
     </div>
-            <h2>Additional Instructor #1</h2>
+            
         <div>
+            <fieldset>
+                <legend>Additional Instructor #1</legend>
             <input type="text" id="fname1" name="fname1" placeholder="First Name">
             <input type="text" id="lname1" name="lname1" placeholder="Last Name">
             <input type="text" id="email1" name="email1" placeholder="Email Address">
+            </fieldset>
         </div>
-
-        <h2>Additional Instructor #2</h2>
+    
+        
         <div>
+                <fieldset>
+                        <legend>Additional Instructor #2</legend>
             <input type="text" id="fname2" name="fname2" placeholder="First Name">
             <input type="text" id="lname2" name="lname2" placeholder="Last Name">
             <input type="text" id="email2" name="email2" placeholder="Email Address">
+                </fieldset>
         </div>
+    
 
-        <h2>Additional Instructor #3</h2>
+        
         <div>
+                <fieldset>
+                        <legend>Additional Instructor #3</legend>
             <input type="text" id="fname3" name="fname3" placeholder="First Name">
             <input type="text" id="lname3" name="lname3" placeholder="Last Name">
             <input type="text" id="email3" name="email3" placeholder="Email Address">
+            </fieldset>
         </div>
         <br>
         <input type="submit" value="Add School">

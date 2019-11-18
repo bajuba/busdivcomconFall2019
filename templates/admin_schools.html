@@ -1,6 +1,74 @@
-{% extends "base.html" %}
+{% extends "admin_base.html" %}
 {% block content %}
 
 <h1>Welcome to the Admin Schools.</h1>
+<form action=" " method="post" id="form1">
+    <fieldset>
+        <legend>Add/Edit Schools</legend>
+        <select name="school">
+            <option value="new">New School</option>
+            <option value="centralia">Centralia High School</option>
+            <option value="champaign1">Champaign Centennial High School</option>
+            <option value="champaign2">Champaign Central High School</option>
+            <option value="charleston">Charleston High School</option>
+            <option value="dieterich">Dieterich High School</option>
+            <option value="fairfield">Fairfield Community High School</option>
+            <option value="flora">Flora High School</option>
+            <option value="martinsville">Martinsville High School</option>
+            <option value="neoga">Neoga High School</option>
+            <option value="newton">Newton Community High School</option>
+            <option value="okaw">Okaw Valley High School</option>
+            <option value="pana">Pana High School</option>
+            <option value="paris">Paris High School</option>
+            <option value="pbl">PBL High School</option>
+            <option value="shelbyville">Shelbyville High School</option>
+            <option value="shiloh">Shiloh High School</option>
+            <option value="stelmo">St. Elmo</option>
+        </select>
+
+        <label>School Name:</label><br><input type="text" name="name" required placeholder="School Name">
+        
+        <label>Address:</label><input type="text" name="address" required placeholder="Address">
+
+        <label>City:</label><input type="text" name="city" required placeholder="City">
+
+        <label>Zip Code:</label><input type="text" name="zip" required placeholder="Zip Code" maxlength="5">
+
+        <label>Phone Number:</label><input type="text" name="pnumber1" placeholder="School phone number (10 digits)">
+
+        <label>Direct Phone Number:</label><input type="text" name="pnumber2" placeholder="Direct phone number (10 digits)">
+
+        <label>Contact's First Name:</label><input type="text" name="fname" required placeholder="First name">
+
+        <label>Contact's Last Name:</label><input type="text" name="lname" required="required" placeholder="Last name">
+
+        <label>Contact's Email Address:</label><input type="text" name="email" placeholder="Email">
+
+        <label>Password Reset</label><input type="text" name="preset" placeholder="New Password">
+    </fieldset>
+
+    <h2>Additional Instructor #1</h2>
+    <div>
+        <input type="text" id="fname1" name="fname1" placeholder="First Name">
+        <input type="text" id="lname1" name="lname1" placeholder="Last Name">
+        <input type="text" id="email1" name="email1" placeholder="Email Address">
+    </div>
+
+    <h2>Additional Instructor #2</h2>
+    <div>
+        <input type="text" id="fname2" name="fname2" placeholder="First Name">
+        <input type="text" id="lname2" name="lname2" placeholder="Last Name">
+        <input type="text" id="email2" name="email2" placeholder="Email Address">
+    </div>
+
+    <h2>Additional Instructor #3</h2>
+    <div>
+        <input type="text" id="fname3" name="fname3" placeholder="First Name">
+        <input type="text" id="lname3" name="lname3" placeholder="Last Name">
+        <input type="text" id="email3" name="email3" placeholder="Email Address">
+    </div>
+    <br>
+    <input type="submit" value="Add School">
+</form>
 
 {% endblock %}

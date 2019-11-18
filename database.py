@@ -9,6 +9,8 @@ app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
 
+app.secret_key = "business_division"
+
 #visit here for examples: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
 #example: posts = db.relationship('Post', backref='author', lazy='dynamic')
 
@@ -130,6 +132,7 @@ class Pictures(db.Model):
     title = db.Column(db.String(255), nullable = False, default = "")
     file_name = db.Column(db.String(255), nullable = False, default = "")
     contest_id = db.Column(db.Integer, db.ForeignKey("contests.id"), nullable = False, default = "")
+    ##ADD A FIELD TO STORE THE YEAR
 
     def __init__(self, title, file_name, contest_id):
         self.title = title

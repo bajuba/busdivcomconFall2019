@@ -50,19 +50,18 @@
     -->
 	</head>
 	<body>
-<!--Navbar (Requires bootstrap 3)-->
- <nav class='navbar navbar-inverse'>
-     <div class='container-fluid'>
-        <ul class='nav navbar-nav'>    
-            <li><a href = "{{ url_for('admin_dashboard') }}" class= ''>Home</a></li>
-            <li><a href = "{{ url_for('admin_contests') }}">Contests</a></li>
-            <li><a href = "{{ url_for('admin_events') }}">Events</a></li>
-            <li><a href = "{{ url_for('admin_schools') }}">Schools</a></li>
-            <li><a href = "{{ url_for('admin_teachers') }}">Teachers</a></li>
-            <li><a href = "{{ url_for('admin_students') }}">Students</a></li>
-            <li><a href = "{{ url_for('admin_pictures') }}">Pictures</a></li>
-        </ul>
-    </div>
+ <navclass='navbar navbar-inverse'>
+        <div class='container-fluid'>
+           <ul class='nav navbar-nav'>  
+            <li><a href = "">Home</a></li>
+            <li><a href = "">Contests</a></li>
+            <li><a href = "">Events</a></li>
+            <li><a href = "">Schools</a></li>
+            <li><a href = "">Teachers</a></li>
+            <li><a href = "">Students</a></li>
+            <li><a href = "">Pictures</a></li>
+            </ul>
+        </div>
         </nav>
 
         {% block content %}

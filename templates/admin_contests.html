@@ -3,7 +3,12 @@
 
 <h1>Welcome to the Admin Contests.</h1>
 <div>
-    <form action=" " method="post">
+    <form action="/admin_contests" method="post">
+        <select name = "contest_list">
+            {% for contest in query_all_contests %}
+                <option value = "{{ contest.id }}">{% contest.contest_date %}</option>
+            {% endfor %}
+        </select>
         <fieldset>
             <legend>Contest Details</legend>
                 <label>Name:</label><input type="text" name="contest_name" value="{{ contest_query.name }}" required>
@@ -14,9 +19,13 @@
 
                 <label>Application Closed:</label><input type="text" name="app_closed_date" value="{{ contest_query.app_close_date }}" required>
 
-                <label>Start Time:</label><input type="text" name="start_time" value="" required>
+                <label>Student Sign-up Start Date:</label><input type="text" name="student_start_date" value="{{ contest_query.student_start_date }}" required>
 
-                <label>End Time:</label><input type="text" name="end_time" value="" required>
+                <label>Student Sign-up End Date:</label><input type="text" name="student_end_date" value="{{ contest_query.student_end_date }}" required>
+
+                <label>Start Time:</label><input type="text" name="start_time" value="{{ contest_query.start_time }}" required>
+
+                <label>End Time:</label><input type="text" name="end_time" value="{{ contest_query.end_time }}" required>
 
                 <label>Maximum Students (Per School):</label><input type="text" name="max_students" value="{{ contest_query.max_students }}" required>
         </fieldset>

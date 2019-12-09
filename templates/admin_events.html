@@ -5,7 +5,7 @@
 <form action=" " method="post" id="form3">
     <fieldset>
         <legend>Add/Edit Events</legend>
-        <select name="school">
+        <p><select name="school" style = 'margin-top: 7px'>
             <option value="new">New Event</option>
             <option value="accounting1">Accounting (room 1)</option>
             <option value="accounting2">Accounting (room 2)</option>
@@ -13,26 +13,27 @@
             <option value="excel">MOS Excel 2016</option>
             <option value="powerpoint">MOS Powerpoint 2016</option>
             <option value="word">MOS Word 2016</option>
-        </select>
-        
-        <label>Event Name:</label><input type="text" name="name" placeholder="Event name" required>
-        
-        <label>Seat Limit:</label><input type="text" name="seats" placeholder="Seat limit" required>
-
-        <label>Room:</label><input type="text" name="room" placeholder="Room" required>
-
-        <label>Description:</label><input type="text" name="description" placeholder="Description" required>
-
-        <label>Contact Name:</label><input type="text" name="contact" placeholder="Contact name" required>
-
-        <label>Contact Title:</label><input type="text" name="title" placeholder="Contact title" required>
-
-        <label>Contact Email Address:</label><input type="text" name="email" placeholder="Contact email address" required>
-
-        <label>Contact Phone Number:</label><input type="text" name="pnumber" placeholder="Contact phone number (10 digit)" required>
+        </select></p>
+        <br>
+        <label style = 'margin-top: 7px'>Event Name:</label><p><input type="text" name="name" placeholder="Event name" required style = 'margin-top: 7px'></p>
+        <br>
+        <label>Seat Limit:</label><p><input type="text" name="seats" placeholder="Seat limit" required  style = 'margin-top: 7px'></p>
+<br>
+        <label>Room:</label><p><input type="text" name="room" placeholder="Room" required style = 'margin-top: 7px'></p>
+<br>
+        <label>Description:</label><p><input type="text" name="description" placeholder="Description" required style = 'margin-top: 7px'></p>
+        <br>
+        <label>Contact Name:</label><p><input type="text" name="contact" placeholder="Contact name" required style = 'margin-top: 7px'></p>
+        <br>
+        <label>Contact Title:</label><p><input type="text" name="title" placeholder="Contact title" required style = 'margin-top: 7px'></p>
+        <br>
+        <label>Contact Email Address:</label><p><input type="text" name="email" placeholder="Contact email address" required style = 'margin-top: 7px'></p>
+        <br>
+        <label>Contact Phone Number:</label><p><input type="text" name="pnumber" placeholder="Contact phone number (10 digit)" required style = 'margin-top: 7px'></p>
     </fieldset>        
     <br>
     <input type="submit" value="Add Event">
 </form>
+
 
 {% endblock %}
